@@ -1,0 +1,170 @@
+@import url('http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic');
+
+html, body {
+  font-family: "Precision Sans", "Century Gothic", CenturyGothic, AppleGothic, sans-serif!important;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  color: #000;
+}
+
+.main-background, #endCard, .end {
+  background-color: #FFF;
+}
+
+.waiting .title, .waiting .description, .waiting .joining-description {
+  color: #FFF;
+}
+
+.waiting .joining-description {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: 500;
+}
+
+.waiting .position-on-queue {
+  padding-right: .5rem;
+}
+
+.end .title {
+  color: #000;
+}
+
+.toolbar .record,
+.toolbar .recordings {
+  display: none!important;
+}
+
+.waiting, .dialog, .end .title, .time-left, .stream-name, .chat-ui {
+  font-family: "Precision Sans", "Century Gothic", CenturyGothic, AppleGothic, sans-serif!important;
+}
+
+.card .waiting {
+  background-color: rgba(0, 0, 0, .6);
+}
+
+.card .waiting:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-image: url(https://i.ytimg.com/vi/DDHx_0OV6D4/maxresdefault.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.add-appointment {
+  color: #fff;
+}
+
+.waiting .logo {
+  background-image: url(http://www.gadberrygroup.com/wp-content/uploads/2016/07/pitney-bowes-inc-logo.png);
+  margin-bottom: 2rem;
+  width: 297.66px;
+  height: 73.66px;
+}
+
+b {
+  font-weight: 500;
+}
+
+.accept-next {
+  background-image: -webkit-linear-gradient(left, #3E53A4 0%, #0c76ba 100%);
+  background-image: -o-linear-gradient(left, #3E53A4 0%, #0c76ba 100%);
+  background-image: linear-gradient(to right, #3E53A4 0%, #0c76ba 100%);
+  background-repeat: repeat-x;
+  border: 0;
+  color: #fff;
+}
+
+.accept-next .btn-default {
+  border: .1rem solid #FFF;
+  background-color: transparent;
+  border-radius: 0;
+  color: #FFF;
+  padding: 8px 16px;
+  margin-left: 10px;
+}
+
+.time-left .left-in-call {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.time-left,
+.toolbar .item,
+.stream-toolbar .item {
+  background-color: rgba(62, 83, 164, 0.8);
+  box-shadow: none;
+}
+
+.time-left {
+  background-color: rgba(62, 83, 164, 0.8);
+}
+
+.toolbar .item:hover,
+.stream-toolbar .item:hover {
+  background-color: rgba(62, 83, 164, 1);
+  opacity: 1;
+}
+
+.stream-toolbar .item.strikethrough .icon:after {
+  background-color: #FFF;
+}
+
+[data-chat-visible="true"] .toolbar .item.chat .icon {
+  color: #FFF;
+}
+
+.chat-ui .header {
+  background-color: rgba(62, 83, 164, 0.8);
+}
+
+.chat-ui .item.yourself {
+  background-color: rgba(62, 83, 164, 1);
+  color: #FFF;
+
+  .link, .link:hover, .link:active, .link:visited {
+    color: #FFF;
+  }
+}
+
+.stream-name {
+  left: 0;
+  bottom: 0;
+  border-radius: 0;
+  width: 100%;
+  max-width: 100%;
+  transform: translate(0, 0);
+}
+
+.stream:hover .stream-name,
+.stream[data-video-disabled=true] .stream-name {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.chat-ui {
+  width: 50%;
+  min-width: 0;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+}
+
+.toolbar {
+  transition: transform .3s;
+}
+
+[data-chat-visible="true"] .toolbar {
+  transform: translateX(-25%);
+}
+
+@media only screen and (max-width: 767px) {
+  [data-current-layout-type=float] .streams .stream[data-stream-type=publisher] {
+    bottom: 115px;
+    right: 25px;
+  }
+}
