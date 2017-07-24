@@ -1,0 +1,200 @@
+html,
+body {
+  font-family: arial, helvetica, verdana, sans-serif !important;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  color: #000;
+}
+.main-background,
+#endCard,
+.end {
+  background-color: #FFF;
+}
+.waiting .title,
+.waiting .description,
+.waiting .joining-description {
+  color: #FFF;
+}
+.waiting .joining-description {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: 500;
+}
+.waiting .position-on-queue {
+  padding-right: .5rem;
+}
+.end .title {
+  color: #000;
+}
+.toolbar .record,
+.toolbar .recordings {
+  display: none!important;
+}
+.waiting,
+.dialog,
+.end .title,
+.time-left,
+.stream-name,
+.chat-ui {
+  font-family: arial, helvetica, verdana, sans-serif;
+}
+.card .waiting {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.card .waiting:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-image: url('http://www.geeteesigns.com/wp-content/uploads/2014/03/IMG_3834_8772_openWith-copy.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.waiting .logo {
+  background-image: url(http://www.diy.com/content/diyStore/img/site-logo.png);
+  margin-bottom: 2rem;
+}
+.btn-join,
+.btn-exit {
+  border: none;
+  padding: 1.5rem 8rem;
+  font-size: 1.8rem;
+  background-color: #f60;
+  border-radius: 3rem;
+  color: #FFF;
+}
+.no-hosts {
+  display: none;
+}
+#prejoin[data-num-hosts="0"] .btn-join {
+  display: none;
+}
+#prejoin[data-num-hosts="0"] .no-hosts {
+  display: inline-block;
+}
+.btn-join:hover,
+.btn-join:active {
+  box-shadow: 0 0 0 1.5px #FFF;
+}
+.kf-join-section {
+  transition: all 0.3s ease-out;
+  opacity: 1;
+}
+.kf-join-section.hidden {
+  opacity: 0;
+}
+#prejoin {
+  margin-top: 4rem;
+}
+#joined:not(.hidden) {
+  -webkit-transform: translateY(-6.5rem);
+      -ms-transform: translateY(-6.5rem);
+          transform: translateY(-6.5rem);
+}
+b {
+  font-weight: 500;
+}
+.accept-next {
+  background-image: linear-gradient(to bottom, #f60 0, #f60 100%);
+  border: 0;
+  color: #fff;
+  border-radius: 0;
+  box-shadow: none;
+}
+.accept-next .btn-default {
+  border: .1rem solid #FFF;
+  background-color: transparent;
+  border-radius: 0;
+  color: #FFF;
+  padding: 8px 16px;
+  margin-left: 10px;
+}
+.time-left .left-in-call {
+  font-weight: 600;
+  font-size: 14px;
+}
+.time-left,
+.toolbar .item,
+.stream-toolbar .item {
+  background-color: rgba(255, 102, 0, 0.8);
+  box-shadow: none;
+}
+.time-left {
+  background-color: rgba(255, 102, 0, 0.8);
+}
+.toolbar .item:hover,
+.stream-toolbar .item:hover {
+  background-color: #ff6600;
+  opacity: 1;
+}
+.stream-toolbar .item.strikethrough .icon:after {
+  background-color: #FFF;
+}
+[data-chat-visible="true"] .toolbar .item.chat .icon {
+  color: #FFF;
+}
+.chat-ui .header {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.chat-ui .item.yourself {
+  background-color: #3c3c3c;
+  color: #FFF;
+}
+.chat-ui .item.yourself .link,
+.chat-ui .item.yourself .link:hover,
+.chat-ui .item.yourself .link:active,
+.chat-ui .item.yourself .link:visited {
+  color: #FFF;
+}
+.stream-name {
+  left: 0;
+  bottom: 0;
+  border-radius: 0;
+  width: 100%;
+  max-width: 100%;
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+.stream:hover .stream-name,
+.stream[data-video-disabled=true] .stream-name {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+.fullscreen {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 2rem;
+  color: #FFF;
+}
+.chat-ui {
+  width: 50%;
+  min-width: 0;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+}
+.toolbar {
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+}
+[data-chat-visible="true"] .toolbar {
+  -webkit-transform: translateX(-25%);
+      -ms-transform: translateX(-25%);
+          transform: translateX(-25%);
+}
+@media only screen and (max-width: 767px) {
+  [data-current-layout-type=float] .streams .stream[data-stream-type=publisher] {
+    bottom: 115px;
+    right: 25px;
+  }
+}
+.toolbar #zoom.in .icon:before {
+  content: '\f010';
+}
