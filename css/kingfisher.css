@@ -97,6 +97,9 @@ body {
 b {
   font-weight: 500;
 }
+.add-appointment {
+  color: rgba(255, 255, 255, 1);
+}
 .accept-next {
   background-image: linear-gradient(to bottom, #f60 0, #f60 100%);
   border: 0;
